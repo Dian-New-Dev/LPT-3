@@ -3,5 +3,6 @@ document.addEventListener("DOMContentLoaded", function() {
     insertContentMain1();
     insertContentMain2();
     insertContentMain3();
-    insertContentMain4()
+    insertContentMain4();
+    insertContentMain5();
 });

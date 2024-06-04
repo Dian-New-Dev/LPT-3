@@ -122,9 +122,9 @@ h1, h2 {
 }
 
 h1 {
-    font-size: 80px;
+    font-size: 100px;
     font-weight: 600;
-    line-height: 80px;
+    line-height: 100px;
     color: #FF8A08;
 
 }
@@ -139,7 +139,147 @@ a, button, p {
 
 .main1-hero p {
     font-size: 18px;
+    line-height: initial;
+}
+
+.main2-pra-que-terapia {
+    width: 100%;
+
 }
 
 
+.main2-outer-wrapper {
+    width: 100%;
+    padding: 5% 10%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+}
+
+.main2-text-wrapper {
+    width: 60%;
+    padding-left: 5%;
+}
+
+.main2-img-wrapper {
+    width: 40%;
+}
+
+.main2-img-wrapper img {
+    width: 100%;
+}
+
+h3 {
+    font-size: 14px;
+    font-weight: 400;
+    color: #808080b9;
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 58px;
+    margin: 0;
+    color: #FFC100;
+}
+
+p {
+    line-height: 40px;
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.76);
+}
+
+.main2-pra-que-terapia a {
+    text-decoration: underline;
+}
+
+.line-div {
+    height: 1px;
+    width: 100%;
+    background-color: #808080b9;
+    margin-top: 40px;
+}
+
+h5, h6 {
+    color: #808080b9;
+    margin: 5px 0px;
+
+}
+
+h5 {
+    font-size: 18px;
+}
+
+h6 {
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.main3-sobre-mim {
+    width: 100%;
+}
+
+.main3-outer-wrapper {
+    width: 100%;
+    padding: 5% 10%;
+    display: flex;
+    justify-content: center;
+}
+
+.main3-wrapper-left {
+    width: 50%;
+    padding: 0px 20px;
+}
+
+.main3-wrapper-left img {
+    width: 80%;
+    border-radius: 100%;
+}
+
+.main3-wrapper-right {
+    width: 50%;
+    padding: 0px 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.main3-sobre-mim h4, h3 {
+    margin-bottom: 0;
+    margin-top: 20px;
+    
+}
+
+.main3-sobre-mim h2 {
+    margin-top: 20px;  
+}
+
+h4 {
+    font-size: 22px;
+}
+
+.main4-testemunhos {
+    width: 100%;
+}
+
+.main4-outer-wrapper {
+    width: 100%;
+    padding: 5% 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main4-slider-container{
+    /* display: flex; */
+    border: 1px solid;
+    width: 80%;
+    height: 100%;
+}
+
+.main4-slide {
+    width: 900px;
+    height: 300px;
+    border: 1px solid red;
+}
 
