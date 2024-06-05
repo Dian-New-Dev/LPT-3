@@ -17,31 +17,100 @@ body {
     background-color: #f4efec;
 }
 
+
+
 header {
     width: 100%;
+    margin-bottom: 50px;
+}
+
+@media (min-width: 1600px) {
+    header {
+        width: 100%;
+        margin-bottom: initial;
+    }
+    
+
 }
 
 nav {
     width: 100%;
     display: flex;
-    padding: 10px 50px;
+    padding: 10px 10px;
+
+}
+
+.nav-desktop {
+    display: flex;
+}
+
+@media (max-width: 900px) {
+    .nav-desktop {
+        display: none;
+    }
+}
+
+@media (max-width: 900px) {
+    nav {
+        padding: 10px 50px;
+    }
+}
+
+@media (min-width: 1600px) {
+    nav {
+        padding: 10px 50px;
+    }
+}
+
+.nav-mobile {
+    display: none;
+}
+
+@media (max-width: 900px) {
+    .nav-mobile {
+        display: flex;
+        flex: 1;
+        position: relative;
+        flex-direction: column;
+        justify-content: center;
+        align-items: end;
+        width: 100%;
+        overflow: hidden;
+        padding-top: 20px;
+    }
 }
 
 a {
     text-decoration: none;
     color: inherit;
     margin: 0;
-    font-size: 18px;
+    font-size: 14px;
+    
     font-weight: 600;
+}
+
+@media (min-width: 1600px) {
+    a{
+       font-size: 18px; 
+    }
+    
+
 }
 
 
 
 .nav-left-wrapper {
     display: flex;
-    width: 50%;
+    width: 100%;
     align-items: center;
     justify-content: space-around;
+}
+
+@media (min-width: 1600px) {
+    .nav-left-wrapper {
+        width: 50%;
+    }
+
 }
 
 .logo-container {
@@ -54,10 +123,26 @@ a {
     width: 100%;
 }
 
+@media (min-width: 1600px) {
+    .logo-container img {
+        width: 100%;
+    }
+
+}
+
 .nav-right-wrapper {
-    width: 50%;
+    width: 25%;
     position: relative;
 }
+
+@media (min-width: 1600px) {
+    .nav-right-wrapper {
+        width: 50%;
+    }
+
+}
+
+
 
 .last-a {
     background-color: #C40C0C;
@@ -77,16 +162,41 @@ a {
 
 .main1-outer-wrapper {
     width: 100%;
-    padding: 0px 10%;
+    
     display: flex;
     flex-direction: row-reverse;
     justify-content: center;
     align-items: center;
 }
 
+@media (max-width: 600px) {
+    .main1-outer-wrapper {
+
+        flex-direction:column-reverse;
+    }
+
+}
+
+@media (min-width: 1600px) {
+    .main1-outer-wrapper {
+
+        padding: 0px 10%;
+    }
+
+}
+
 .main1-img-container {
     width: 50%;
 }
+
+@media (max-width: 600px) {
+    .main1-img-container {
+        width: 100%;
+    }
+
+}
+
+
 
 .main1-img-container img {
     width: 100%;
@@ -98,6 +208,15 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: center;
+
+}
+
+@media (max-width: 600px) {
+    .main1-text-container {
+        width: 100%;
+
+    
+    }
 
 }
 
@@ -128,10 +247,18 @@ h1, h2 {
 }
 
 h1 {
-    font-size: 100px;
+    font-size: 60px;
     font-weight: 600;
-    line-height: 100px;
+    line-height: 60px;
     color: #FF8A08;
+}
+
+@media (min-width: 1600px) {
+    h1 {
+        font-size: 100px;
+        line-height: 100px;
+    }
+    
 
 }
 
@@ -143,9 +270,28 @@ a, button, p, li {
     font-family: "Quicksand", sans-serif;
 }
 
+li {
+    font-size: 14px;
+}
+
+@media (min-width: 1600px) {
+    li {
+        font-size: initial;
+    }
+
+}
+
 .main1-hero p {
-    font-size: 18px;
+    font-size: 16px;
     line-height: initial;
+}
+
+@media (min-width: 1600px) {
+    .main1-hero p {
+        font-size: 18px;
+        line-height: initial;
+    }
+
 }
 
 .main2-pra-que-terapia {
@@ -163,13 +309,36 @@ a, button, p, li {
     align-items: center;
 }
 
+@media (max-width: 600px) {
+    .main2-outer-wrapper {
+
+        flex-direction:column;
+    }
+
+}
+
 .main2-text-wrapper {
     width: 60%;
     padding-left: 5%;
 }
 
+@media (max-width: 600px) {
+    .main2-text-wrapper {
+        width: 100%;
+        padding-left: 0;
+    }
+
+}
+
 .main2-img-wrapper {
     width: 40%;
+}
+
+@media (max-width: 600px) {
+    .main2-img-wrapper {
+        width: 100%;
+    }
+
 }
 
 .main2-img-wrapper img {
@@ -185,19 +354,42 @@ h3 {
 }
 
 h2 {
-    font-size: 58px;
+    font-size: 38px;
     margin: 0;
     color: #FFC100;
 }
 
+@media (min-width: 1600px) {
+    h2 {
+        font-size: 58px;
+    }
+    
+
+}
+
 p {
-    line-height: 40px;
-    font-size: 20px;
+    line-height: 30px;
+    font-size: 16px;
     color: rgba(0, 0, 0, 0.76);
 }
 
+@media (min-width: 1600px) {
+    p {
+
+        font-size: 20px;
+
+    }
+    
+
+}
+
+
 .main2-pra-que-terapia a {
     text-decoration: underline;
+}
+
+.main2-pra-que-terapia h3 {
+    margin-bottom: 20px;
 }
 
 .line-div {
@@ -233,9 +425,24 @@ h6 {
     justify-content: center;
 }
 
+@media (max-width: 600px) {
+    .main3-outer-wrapper {
+        flex-direction: column;
+    }
+
+}
+
 .main3-wrapper-left {
     width: 50%;
     padding: 0px 20px;
+}
+
+@media (max-width: 600px) {
+    .main3-wrapper-left {
+        width: 100%;
+
+    }
+
 }
 
 .main3-wrapper-left img {
@@ -243,11 +450,27 @@ h6 {
     border-radius: 100%;
 }
 
+@media (max-width: 600px) {
+    .main3-wrapper-left img {
+        width: 100%;
+
+    }
+
+}
+
 .main3-wrapper-right {
     width: 50%;
     padding: 0px 20px;
     display: flex;
     flex-direction: column;
+}
+
+@media (max-width: 600px) {
+    .main3-wrapper-right {
+        width: 100%;
+
+    }
+
 }
 
 .main3-sobre-mim h4, h3 {
@@ -266,8 +489,8 @@ h4 {
 
 .main4-testemunhos {
     width: 100%;
-    background-color: #fdeed4
-    
+    background-color: #fdeed4;
+    position: relative;
 }
 
 .main4-outer-wrapper {
@@ -276,7 +499,7 @@ h4 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    position: relative;
+    
     
 }
 
@@ -289,21 +512,31 @@ h4 {
 .abs-img1 {
     top: -250px;
     left: 0;
-    transform: scale(0.5);
+    transform: scale(0.3);
 
 }
 
 .abs-img2 {
     bottom: -200px;
-    right: 0;
-    transform: scale(0.4);
+    right: -5%;
+    transform: scale(0.2);
     
 }
 
 .abs-img3 {
-    left: -10%;
+    left: -30%;
     bottom: 5%;
-    transform: rotate(90deg) scale(0.3);
+    transform: rotate(90deg) scale(0.2);
+}
+
+@media (min-width: 1600px) {
+    .abs-img3 {
+        left: -10%;
+
+
+    }
+    
+
 }
 
 .main4-slider-container {
@@ -324,6 +557,14 @@ h4 {
     padding-top: 3%;
 }
 
+@media (max-width: 600px) {
+    .main4-slider-container {
+        width: 100%;
+    }
+
+
+}
+
 .main4-slider-container::-webkit-scrollbar {
     display: none; /* Hide scrollbar for Webkit browsers */
 }
@@ -341,6 +582,19 @@ h4 {
     display: flex;
     flex-direction: column;
     justify-content: center;
+
+}
+
+@media (max-width: 600px) {
+    .main4-slide {
+        width: 300px;
+        height: 400px;
+
+        padding: 10px;
+
+    }
+
+
 }
 
 .main5-areas {
@@ -363,7 +617,7 @@ h4 {
 
 .main5-grid {
 display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-template-rows: auto auto;
     gap: 50px; /* Adjust the gap as needed */
 
@@ -387,6 +641,16 @@ display: grid;
     
 }
 
+@media (max-width: 600px) {
+    .CTA-outer-wrapper {
+
+        display: block;
+        text-align: center;
+
+        
+    }
+}
+
 .CTA-left {
     width: 33%;
 }
@@ -400,6 +664,15 @@ display: grid;
 .CTA-middle {
     width: 50%;
 
+}
+
+@media (max-width: 600px) {
+    .CTA-left, .CTA-right, .CTA-middle  {
+
+        width: 100%;
+
+        
+    }
 }
 
 .CTA img {
@@ -424,4 +697,74 @@ footer {
 
 footer p {
     margin: 0;
+}
+
+
+
+
+
+.main1-outer-wrapper, .main2-outer-wrapper, .main3-outer-wrapper, 
+.main4-outer-wrapper, .main5-outer-wrapper, .CTA-outer-wrapper  {
+    padding: 20px;
+}
+
+@media (max-width: 600px) {
+    .main1-outer-wrapper,  .main3-outer-wrapper {
+        padding: 0px;
+    }
+
+}
+
+
+
+@media (min-width: 1600px) {
+    .main1-outer-wrapper, .main2-outer-wrapper, .main3-outer-wrapper, 
+    .main4-outer-wrapper, .main5-outer-wrapper, .CTA-outer-wrapper  {
+        padding: 5% 10%;
+    }
+
+}
+
+
+
+
+.hamb-lines {
+  width: 30px;
+  border: 1px solid black;
+  margin-bottom: 5px;
+  transform: translateY(0) rotate(0deg);
+  transition: transform 0.5s ease;
+}
+
+.hamb-menu-panel {
+	display: block;
+	position: absolute;
+	top: 50px;
+	right: -400px;
+	background-color:#C40C0C;
+	color: white;
+	font-size: 32px;
+	font-family: "Balthazar", serif;
+	transition: right 0.5s ease;
+
+}
+
+.hamb-menu-panel ul {
+	padding: 0;
+	margin: 0;
+}
+
+.li-wrapper {
+	border-bottom: 1px solid white;
+	padding: 20px;
+}
+
+.li-wrapper li {
+	list-style-type: none;
+}
+
+.logo-mobile {
+    width: 200px;
+    position: absolute;
+    left: 50px;
 }
